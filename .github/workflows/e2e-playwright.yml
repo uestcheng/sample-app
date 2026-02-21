@@ -1,7 +1,7 @@
 name: E2E Playwright
 
 on:
-  workflow_dispatch:
+  push:
 
 jobs:
   e2e:
@@ -51,8 +51,8 @@ jobs:
         env:
           APP_BASE_URL: http://127.0.0.1:5172
           HEADLESS: 'true'
-        run: npx playwright test
-
+        run: npm run test:dynamic
+ 
       - name: Upload Playwright report
         if: always()
         uses: actions/upload-artifact@v4
