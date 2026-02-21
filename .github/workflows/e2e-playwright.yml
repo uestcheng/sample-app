@@ -38,7 +38,7 @@ jobs:
 
       - name: Install Playwright browsers
         working-directory: qa
-        run: npx playwright install --with-deps
+        run: npx playwright install --with-deps chromium
 
       - name: Start Vite app
         run: nohup npm run dev -- --host 127.0.0.1 --port 5172 > /tmp/vite.log 2>&1 &
