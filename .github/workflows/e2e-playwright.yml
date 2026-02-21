@@ -50,6 +50,7 @@ jobs:
         working-directory: qa
         env:
           APP_BASE_URL: http://127.0.0.1:5172
+          HEADLESS: 'true'
         run: npx playwright test
 
       - name: Upload Playwright report
