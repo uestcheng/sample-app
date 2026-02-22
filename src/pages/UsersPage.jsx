@@ -41,6 +41,7 @@ export default function UsersPage({
   return (
     <section data-testid="users-page">
       <h2>User Management</h2>
+      <p data-testid="users-page-note">Workflow check: user selection drives product ordering.</p>
       <form onSubmit={submit} className="form" data-testid="user-form">
         <input
           data-testid="user-name-input"

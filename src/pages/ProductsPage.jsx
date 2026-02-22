@@ -35,7 +35,7 @@ export default function ProductsPage({ products, orders, activeUser, onAddProduc
   return (
     <section data-testid="products-page">
       <h2>Product & Order Workflow</h2>
-      <p data-testid="products-page-note">Featured products: Keyboard, Mouse, Headset</p>
+      <p data-testid="products-page-note">Featured products: Keyboard, Mouse, Headset (CI workflow check)</p>
       <p className="hint">Active user: {activeUser ? activeUser.name : 'Not selected'}</p>
       <form onSubmit={add} className="form" data-testid="product-form">
         <input
