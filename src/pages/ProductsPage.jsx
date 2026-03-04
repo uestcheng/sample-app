@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import ProductsTable from '../components/ProductsTable'
 
 export default function ProductsPage({ products, orders, activeUser, onAddProduct, onPlaceOrder }) {
   const [name, setName] = useState('')
@@ -64,7 +65,7 @@ export default function ProductsPage({ products, orders, activeUser, onAddProduc
       </form>
       {notice ? <p className="notice">{notice}</p> : null}
 
-      <table data-testid="product-list">
+      <ProductsTable>
         <thead>
           <tr>
             <th>Product</th>
@@ -102,7 +103,7 @@ export default function ProductsPage({ products, orders, activeUser, onAddProduc
           </tr>
         ))}
         </tbody>
-      </table>
+      </ProductsTable>
 
       <h3>Recent Orders</h3>
       <ul>

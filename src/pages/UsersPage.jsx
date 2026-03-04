@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import UsersTable from '../components/UsersTable'
 
 export default function UsersPage({
   users,
@@ -60,7 +61,7 @@ export default function UsersPage({
         </button>
       </form>
 
-      <table data-testid="user-table">
+      <UsersTable>
         <thead>
           <tr>
             <th>Name</th>
@@ -91,7 +92,7 @@ export default function UsersPage({
             </tr>
           ))}
         </tbody>
-      </table>
+      </UsersTable>
     </section>
   )
 }

@@ -7,8 +7,8 @@ export default function HomePage() {
       <ul>
         <li>Frontend code is located in frontend/src</li>
         <li>E2E tests are located in frontend/qa</li>
-        <li>Test mapping is in qa/src/config/test.config.ts</li>
-        <li>Dynamic selection entry is in qa/src/utils/runDynamicSelection.ts</li>
+        <li>Test mapping is auto-generated at qa/.tmp/mapping.json</li>
+        <li>Dynamic selection entry is in qa/scripts/resolve-tests.ts</li>
       </ul>
     </section>
   )
