@@ -93,6 +93,7 @@ export default function UsersPage({
           ))}
         </tbody>
       </UsersTable>
+      <p data-testid="user-count" className="hint">Total: {users.length} users</p>
     </section>
   )
 }
